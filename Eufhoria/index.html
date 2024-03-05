@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Демо Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="border-bottom">
+      <div class="container">
+        <header
+          class="navbar navbar-expand-xl d-flex align-items-center gx-5 py-4"
+        >
+          <img src="img/logo.svg" alt="logo" />
+          <button
+            class="navbar-toggler ms-auto me-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="d-flex align-items-center gap-2 py-3 order-end">
+            <button type="button" class="btn btn-light">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button type="button" class="btn btn-light">
+              <i class="bi bi-person"></i>
+            </button>
+            <button type="button" class="btn btn-light">
+              <i class="bi bi-cart"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fs-2 text-secondary-emphasis" href="#"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-2 text-secondary-emphasis" href="#"
+                  >Men</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-2 fw-semibold text-secondary-emphasis"
+                  href="#"
+                  >Women</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-2 text-secondary-emphasis" href="#"
+                  >Combos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-2 text-secondary-emphasis" href="#"
+                  >Joggers</a
+                >
+              </li>
+            </ul>
+
+            <div class="flex-end">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  type="search"
+                  class="form-control bg-light"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-xl-3 col-lg-4 d-none d-lg-block d-flex flex-column">
+            <div
+              class="d-flex align-items-center justify-content-between py-4 px-4 border"
+            >
+              <span class="fs-2 fw-semibold">Filter</span>
+              <img src="img/filter.svg" alt="" />
+            </div>
+            <div class="d-flex flex-column gap-3 border p-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Tops</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Printed T-shirts</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Plain T-shirts</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Kurti</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Boxers</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Full sleeve T-shirts</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Joggers</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Payjamas</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Jeans</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between py-4 px-4 border"
+            >
+              <span class="fs-2 fw-semibold">Price</span>
+              <img src="img/arrow top.svg" alt="" />
+            </div>
+
+            <div class="d-flex flex-column gap-3 py-4 border">
+              <div class="px-4">
+                <label for="customRange1" class="form-label"></label>
+                <input type="range" class="form-range" id="customRange1" />
+              </div>
+
+              <div class="d-flex gap-4 justify-content-center">
+                <div class="col-4 text-center px-4 py-1 border rounded-3">
+                  $70
+                </div>
+                <div class="col-4 text-center px-4 py-1 border rounded-3">
+                  $600
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between py-4 px-4 border"
+            >
+              <span class="fs-2 fw-semibold">Colors</span>
+              <img src="img/arrow top.svg" alt="" />
+            </div>
+            <div class="py-4 px-4 border gap-3">
+              <div class="row py-2">
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="Purple p-4 rounded-4"></div>
+                  <div>Purple</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="Black p-4 rounded-4"></div>
+                  <div>Black</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="Red p-4 rounded-4"></div>
+                  <div>Red</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Orange rounded-4"></div>
+                  <div>Orange</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Navy rounded-4"></div>
+                  <div>Navy</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 bg-white rounded-4"></div>
+                  <div>White</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Broom rounded-4"></div>
+                  <div>Broom</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Green rounded-4"></div>
+                  <div>Green</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Yellow rounded-4"></div>
+                  <div>Yellow</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Grey rounded-4"></div>
+                  <div>Grey</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Pink rounded-4"></div>
+                  <div>Pink</div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center flex-column gap-3 my-2"
+                >
+                  <div class="p-4 Blue rounded-4"></div>
+                  <div>Blue</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between py-4 px-4 border"
+            >
+              <span class="fs-2 fw-semibold">Size</span>
+              <img src="img/arrow top.svg" alt="" />
+            </div>
+            <div class="py-4 border">
+              <div class="row g-4 px-3">
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">XXS</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">XL</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">XS</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">S</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">M</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">L</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">XXL</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">3XL</div>
+                </div>
+                <div class="col-4">
+                  <div class="px-4 py-1 border rounded-3 text-center">4XL</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between py-4 px-4 border"
+            >
+              <span class="fs-2 fw-semibold">Dress Style</span>
+              <img src="img/arrow top.svg" alt="" />
+            </div>
+            <div class="d-flex flex-column gap-3 border p-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Classic</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Casual</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Business</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Sport</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Elegant</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span>Formal (evening)</span>
+                <img src="img/arrow right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-9 col-lg-8 col-md-12 d-flex flex-column pt-5">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="fs-2 fw-semibold">Women’s Clothing</div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2 fw-semibold text-primary">New</div>
+                <div class="fs-2 fw-semibold">Recommended</div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/1.svg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Black Sweatshirt with ....</span
+                    >
+                    <span class="small">Jhanvi’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $123.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/2.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate">White T-shirt</span>
+                    <span class="small">Helen’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $11.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/3.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Levender Hoodie with ....</span
+                    >
+                    <span class="small">Nike’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $119.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/4.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Leaves Pattern White...</span
+                    >
+                    <span class="small">paypal’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $77.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/5.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >White Graphic Crop Top</span
+                    >
+                    <span class="small">woden’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $29.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/6.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate">Black Shorts</span>
+                    <span class="small">MM’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $37.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/7.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Barboreal Gray Sweats...</span
+                    >
+                    <span class="small">Priya’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $77.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/8.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Yellow Sweatshirt</span
+                    >
+                    <span class="small">woden’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $29.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/9.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Flower Pattern Black C...</span
+                    >
+                    <span class="small">MM’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $37.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/10.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >I Don’t Graphic T-shirt
+                    </span>
+                    <span class="small">Nisargi’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $77.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/11.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >Blue Flower Print Crop ....</span
+                    >
+                    <span class="small">Mellon’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $29.00
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-6 col-sm-6 d-flex flex-column gap-3 py-4"
+              >
+                <img class="img-fluid" src="img/12.jpg" alt="" />
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column overflow-hidden">
+                    <span class="fw-semibold text-truncate"
+                      >line Pattern Black H...</span
+                    >
+                    <span class="small">AS’s Brand</span>
+                  </div>
+                  <button type="button" class="btn btn-light fw-bold">
+                    $37.00
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="container">
+        <div class="d-flex flex-column gap-4">
+          <div class="d-flex">
+            <div
+              class="me-3 border-start border-5 border-primary rounded-pill"
+            ></div>
+            <span class="fs-3 fw-semibold"
+              >Clothing for Women Online in India</span
+            >
+          </div>
+
+          <span class="fw-semibold fs-4"
+            >Reexplore Women's Clothing Collection Online at Euphoria</span
+          >
+          <span class="fs-4"
+            >Women's Clothing – Are you searching for the best website to buy
+            Clothing for Women online in India? Well, your search for the
+            coolest and most stylish womens clothing ends here. From trendy
+            Casual Womens Wear Online shopping to premium quality cotton women's
+            apparel, Euphoria has closet of Women Collection covered with the
+            latest and best designs of Women's Clothing Online.</span
+          >
+          <span class="fs-4"
+            >Our collection of clothes for women will make you the trendsetter
+            with an iconic resemblance of choice in Womens Wear.
+          </span>
+          <span class="fw-semibold fs-4"
+            >One-Stop Destination to Shop Every Clothing for Women:
+            Euphoria</span
+          >
+          <span class="fs-4"
+            >Today, Clothing for Women is gaining more popularity above all.
+            This is because gone are the days when women were used to carrying
+            uncomfortable fashion. Today, a lady looks prettier when she is in
+            Casual Womens Wear which is a comfortable outfit. Concerning this,
+            Euphoria has a big fat range of Stylish Women's Clothing that would
+            make her the winner wherever she goes.
+          </span>
+          <span class="fs-4"
+            >Our collection of clothes for women will make you the trendsetter
+            with an iconic resemblance of choice in Womens Wear. It is quite
+            evident to say that there are very few Womens Clothing online stores
+            where you can buy Western Wear for Women comprising the premium
+            material and elegant design that you are always seeking for.
+            Basically,
+          </span>
+          <span class="fw-semibold fs-4">See More</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="d-flex py-5">
+          <div
+            class="me-3 border-start border-5 border-primary rounded-pill"
+          ></div>
+          <span class="fs-3 fw-semibold"
+            >Buy Women's Clothing at Best Price</span
+          >
+        </div>
+        <div class="bg-light p-5 rounded-4">
+          <div class="row border-bottom align-items-center">
+            <div class="col-9 fs-2 fw-semibold py-4">Buy Women's Clothing</div>
+            <div class="col-3 fs-2 fw-semibold text-center border-start py-4">
+              Best Price
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-9 fs-2 py-3">
+              Pick Any 4- Womens Plain T-shirt Combo
+            </div>
+            <div class="col-3 fs-2 text-center border-start py-3">₹1099</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark p-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-between p-sm-1 p-lg-5">
+          <div class="col-xl-auto col-sm-6 flex-column">
+            <div class="fs-2 fw-bold text-white py-4">Need Help</div>
+            <div class="d-flex flex-column gap-3">
+              <span class="text-white">Contact Us</span>
+              <span class="text-white">Track Order</span>
+              <span class="text-white">Returns & Refunds</span>
+              <span class="text-white">FAQ's</span>
+              <span class="text-white">Career</span>
+            </div>
+          </div>
+          <div class="col-xl-auto col-sm-6 flex-column">
+            <div class="fs-2 fw-bold text-white py-4">Company</div>
+            <div class="d-flex flex-column gap-3">
+              <span class="text-white">About Us</span>
+              <span class="text-white">euphoria Blog</span>
+              <span class="text-white">euphoriastan</span>
+              <span class="text-white">Collaboration</span>
+              <span class="text-white">Media</span>
+            </div>
+          </div>
+          <div class="col-xl-auto col-sm-6 flex-column">
+            <div class="fs-2 fw-bold text-white py-4">More Info</div>
+            <div class="d-flex flex-column gap-3">
+              <span class="text-white">Term and Conditions</span>
+              <span class="text-white">Privacy Policy</span>
+              <span class="text-white">Shipping Policy</span>
+              <span class="text-white">Sitemap</span>
+            </div>
+          </div>
+          <div class="col-xl-auto col-sm-6 flex-column">
+            <div class="fs-2 fw-bold text-white py-4">Location</div>
+            <div class="d-flex flex-column gap-3">
+              <span class="text-white">support@euphoria.in</span>
+              <span class="text-white"
+                >Eklingpura Chouraha, Ahmedabad Main Road</span
+              >
+              <span class="text-white"
+                >(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row align-items-end py-4 p-5">
+          <div class="col-xl-8 col-sm-12">
+            <div class="d-flex align-items-center gap-2">
+              <img src="/img/face.svg" alt="" />
+              <img src="/img/inst.svg" alt="" />
+              <img src="/img/twit.svg" alt="" />
+              <img src="/img/in.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12">
+            <div class="d-flex justify-content-end flex-column gap-4">
+              <div class="fs-2 fw-bold text-white">Download The App</div>
+              <div class="d-flex alig-items-center gap-4">
+                <img src="img/google.svg" alt="" />
+                <img src="img/apple.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <div class="container">
+        <div class="d-flex flex-column py-5">
+          <div
+            class="d-flex justify-content-between border-top border-bottom px-5 py-3"
+          >
+            <div class="fs-3 fw-bold text-white">Popular Categories</div>
+            <img src="img/arrow bottom.svg" alt="" />
+          </div>
+        </div>
+        <div class="text-white text-center pb-5 fw-bold">
+          Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

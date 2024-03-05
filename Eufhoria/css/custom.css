@@ -1,0 +1,21 @@
+.bottom-black-border {
+  margin-bottom: -3px !important;
+  border-bottom: 3px solid black !important;
+}
+
+.border-bottom-3 {
+  border-bottom-width: 3px !important;
+}
+
+.fs-2 {
+  font-size: 24px !important;
+}
+.border-left {
+  border-left: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+}
+
+.border-top {
+  border-top: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+}
